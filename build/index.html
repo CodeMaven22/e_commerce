@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <div class="flex flex-col">
+            <!-- brand -->
+            <div class="flex items-start justify-between">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+                <h2>FashionMaven</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+            </div>
+            <!-- nav -->
+            <div class="mt-4 ">
+                <ul class="flex justify-center items-center space-x-4">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <!-- search -->
+            <div class="flex items-center justify-center mt-4">
+                <input class="border-2 border-gray-50 rounded-lg shadow-md p-2 w-1/2" type="search" name="" placeholder="search">
+            </div>
+            
+        </div>
+
+        <!-- main -->
+        <div class="mt-12 space-y-5">
+            <div class="h-64 w-full bg-gradient-to-tr from-zinc-800 to-zinc-900 relative overflow-hidden">
+                <img class="w-full h-full object-cover absolute mix-blend-overlay" src="img/airforce.jpg" alt="">
+                <div class="pt-20 pl-10 w-3/5">
+                    <h1 class="text-white text-3xl font-bold">Sports Shoes</h1>
+                    <p class="text-white text-sm font-light mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod in consequuntur suscipit facere doloribus dolorem! Asperiores.</p>
+                    <div class="mt-2 flex flex-row">
+                        <a class="border-1 border-white p-2 bg-cyan-700 text-white font-semibold uppercase " href="">Shop Now</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2">
+                <div class="rounded-lg shadow-lg w-full h-64 bg-gradient-to-tr from-zinc-800 to-zinc-900 relative">
+                    <img class="w-full h-full absolute object-cover object-center  mix-blend-overlay "  src="img/backpack.webp" alt="">
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <h1 class="text-white text-3xl font-bold">BackPack</h1>
+                        <p class="text-white text-sm font-light mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                        <div class="mt-2 flex flex-row items-center  bg-cyan-700 w-36">
+                            <a class="border-1 border-white p-2 text-white font-semibold uppercase " href="">Shop Now</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-current text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>   
+                                                       
+                        </div>    
+                    </div>
+                </div>
+                <div class="rounded-lg shadow-lg w-full h-64 bg-gradient-to-tr from-teal-100 to-zinc-900 relative">
+                    <img class="w-full h-full absolute object-cover object-center  mix-blend-overlay "  src="img/gampad.jpg" alt="">
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        <h1 class="text-white text-3xl font-bold">Games</h1>
+                        <p class="text-white text-sm font-light mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                        <div class="mt-2 flex flex-row items-center  bg-cyan-700 w-36">
+                            <a class="border-1 border-white p-2 text-white font-semibold uppercase " href="">Shop Now</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-current text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                            </svg>                               
+                        </div>    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fashion -->
+            <div class="mt-4">
+                <h1 class="text-teal-500 font-semibold text-lg">Fashions</h1>
+                <div class="grid grid-cols-4 gap-2 mt-4">
+                    <div class="bg-gray-500 rounded-md shadow-md">
+                        <div>
+                            <div class="w-full h-64">
+                                <img class="w-full h-full object-cover object-center" src="img/watch.jpg" alt="">
+                            </div>
+                            
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
