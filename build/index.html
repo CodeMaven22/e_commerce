@@ -22,7 +22,7 @@
                 </div>
                 
                 <h2 class="text-cyan-700 font-semibold sm:text-base text-sm">FashionMaven</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <svg id="cartMenubar" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-current text-gray-500 hover:text-gray-700 cursor-pointer">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                 </svg>
             </div>
@@ -42,20 +42,20 @@
             </div>
 
              <!-- cat sidebar -->
-             <div class="hidden h-full w-64 absolute top-0 right-0 transform translate-x-0 translate-y-0 bg-white shadow-2xl z-20 overflow-hidden overflow-y-auto">
+            <div id="sideMenu" class="fixed top-0 right-0 h-full w-fit z-10 bg-gray-800 text-white p-4 transform -translate-y-full transition duration-300 ease-in-out">
                 <div class="flex flex-col">
                     <div class="p-2 flex items-center justify-between">
-                        <p class="italic text-cyan-700 text-sm sm:text-base font-semibold">Your Cart</p>
+                        <p class="italic text-sm sm:text-base font-semibold">Your Cart</p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-5 h-5 text-gray-500 stroke-current font-bold cursor-pointer">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                         </svg>
                     </div>
                                               
-                    <div class="flex flex-col items-center mt-2 border-2 border-gray-50">
+                    <div class="flex flex-col items-center mt-2 shadow-lg border-2 border-gray-500">
                         <div class="flex items-center shadow-lg w-full p-2">
                             <img class="rounded-full w-20 h-20" src="img/airforce.jpg" alt="">
                             <div class="flex flex-col p-1 ml-5 space-y-1">
-                                <h2 class="text-sm sm:text-base text-gray-700 italic">Nikeshoe</h2>
+                                <h2 class="text-sm sm:text-base text-gray-300 italic">Nikeshoe shopping</h2>
                                 <p class="text-sm sm:text-base text-gray-500 italic">$2000</p>
                                 <div class="flex items-center justify-between">
                                     <p class="w-5 h-5 bg-red-700 rounded-full shadow-lg"></p>
@@ -68,11 +68,11 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-center mt-4 border-2 border-gray-50">
+                    <div class="flex flex-col items-center mt-4 shadow-lg border-2 border-gray-500">
                         <div class="flex items-center shadow-lg w-full p-2">
                             <img class="rounded-full w-20 h-20" src="img/dress.jpg" alt="">
                             <div class="flex flex-col p-1 ml-5 space-y-1">
-                                <h2 class="text-sm sm:text-base text-gray-700 italic">Tight Dress</h2>
+                                <h2 class="text-sm sm:text-base text-gray-300 italic">Tight Dress</h2>
                                 <p class="text-sm sm:text-base text-gray-500 italic">$4000</p>
                                 <div class="flex items-center justify-between">
                                     <p class="w-5 h-5 bg-cyan-700 rounded-full shadow-lg"></p>
@@ -92,20 +92,18 @@
         <div class="mt-8 sm:mt-12 space-y-5">
             <div class="h-64 w-full bg-gradient-to-tr from-zinc-800 to-zinc-900 relative overflow-hidden">
                 <img class="w-full h-full object-cover absolute mix-blend-overlay" src="img/iphones.jpg" alt="">
-                <div class="pt-20 pl-10 w-3/5">
-                    <h1 class="text-white text-sm sm:text-base font-bold">SmartPhones</h1>
-                    <p class="text-white text-sm sm:text-base font-light mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod in consequuntur suscipit facere doloribus dolorem! Asperiores.</p>
-                    <div class="mt-2 flex flex-row">
-                        <a class="border-1 border-white p-2 bg-cyan-700 text-white text-sm sm:text-base font-semibold uppercase cursor-pointer hover:text-cyan-900" href="">Shop Now</a>
-                    </div> 
+                <div class="p-20 w-full">
+                    <h1 class="text-white text-lg sm:text-3xl  font-bold">FashionMaven</h1>
+                    <p class="text-white text-sm sm:text-lg font-light mt-2">
+                        This is your trendy world of fashion and technology! Explore the latest in clothing, shoes, and gadgets tailored just for you.</p>
                 </div>
             </div>
             <div class="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 <div class="rounded-lg shadow-lg w-full h-64 bg-gradient-to-tr from-zinc-800 to-zinc-900 relative">
                     <img class="w-full h-full absolute object-cover object-center  mix-blend-overlay "  src="img/lap2.jpg" alt="">
                     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <h1 class="text-white text-sm sm:text-base font-bold">Laptops</h1>
-                        <p class="text-white text-sm sm:text-base font-light mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                        <h1 class="text-white text-base sm:text-lg font-bold">Laptops</h1>
+                        <p class="text-white text-sm sm:text-base font-light mt-2">Hp and Dell</p> 
                         <div class="mt-2 flex flex-row items-center  bg-cyan-700 w-36">
                             <a class="border-1 border-white p-2 text-white font-semibold uppercase cursor-pointer hover:text-cyan-900" href="">Shop Now</a>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-current text-white">
@@ -116,10 +114,10 @@
                     </div>
                 </div>
                 <div class="rounded-lg shadow-lg w-full h-64 bg-gradient-to-tr from-teal-100 to-zinc-900 relative">
-                    <img class="w-full h-full absolute object-cover object-center  mix-blend-overlay "  src="img/gampad.jpg" alt="">
+                    <img class="w-full h-full absolute object-cover object-center  mix-blend-overlay "  src="img/pho_iphon.jpg" alt="">
                     <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                        <h1 class="text-white text-sm sm:text-base font-bold">Games</h1>
-                        <p class="text-white text-sm sm:text-base font-light mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+                        <h1 class="text-white text-base sm:text-lg font-bold">Phones</h1>
+                        <p class="text-white text-sm sm:text-base font-light mt-2">Samsung , Redmi ,Iphones and Huaweh</p> 
                         <div class="mt-2 flex flex-row items-center  bg-cyan-700 w-36">
                             <a class="border-1 border-white p-2 text-white font-semibold uppercase cursor-pointer hover:text-cyan-900" href="">Shop Now</a>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-6 h-6 stroke-current text-white">
@@ -349,6 +347,6 @@
             <p class="text-white text-sm sm:text-base">github: CodeMaven22</p>
         </div>
     </div>
-    
+    <script src="./src/app.js"></script>
 </body>
 </html>
